@@ -1,6 +1,7 @@
 async function weatherAPI(woeid) {
     try{
         // Retrieve Data
+      
         const result = await fetch(`https://cors-anywhere.herokuapp.com/https://www.metaweather.com/api/location/${woeid}/`);
         const data = result.json();
         // Manipulate Data
